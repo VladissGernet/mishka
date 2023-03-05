@@ -31,5 +31,46 @@
   <!--  favicons end-->
 </head>
 <body>
+<header class="main-header">
+  <div class="main-header__container container">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/header/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+        <img src="img/header/logo-mobile.svg" width="86" height="35" alt="Mishka.">
+      </picture>
+    </a>
+    <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+      <button class="main-header__toggle" type="button">
+      <span class="visually-hidden">
+        Открыть меню.
+      </span>
+      </button>
+      <ul class="main-header__list">
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            Поиск по сайту
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>
