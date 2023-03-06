@@ -1,10 +1,13 @@
 .main-header {
   min-height: 79px;
-  position: relative;
 }
 
 .main-header__container {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .main-header__logo {
@@ -13,8 +16,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
-    left: 48px;
+    left: 0;
   }
 
   &:hover {
@@ -126,6 +128,8 @@
     grid-row: 2 / 3;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 22px;
+    gap: 20px 37px;
   }
 }
 
@@ -216,6 +220,8 @@
 .main-header__link--navigation {
   @media (min-width: $tablet-width) {
     padding: 0;
+    font-size: 15px;
+    max-width: 140px;
   }
 }
 
@@ -247,4 +253,3 @@
   opacity: 0.3;
   fill: $downy;
 }
-

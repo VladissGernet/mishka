@@ -1,12 +1,3 @@
 .main {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 1px;
-    background-color: $whisper;
-    top: 0;
-  }
+  outline: 0;
 }
