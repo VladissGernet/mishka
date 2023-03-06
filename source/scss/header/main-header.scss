@@ -139,6 +139,12 @@
   }
 }
 
+.main-header__list--user {
+  @media (min-width: $desktop-width) {
+    max-width: 350px;
+  }
+}
+
 .main-header__list--navigation {
   @media (min-width: $tablet-width) {
     display: none;
