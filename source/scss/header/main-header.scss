@@ -180,7 +180,10 @@
 }
 
 .main-header__list--tertiary {
+  display: none;
+  
   @media (min-width: $desktop-width) {
+    display: block;
     gap: 10px 63px;
     max-width: 460px;
   }
