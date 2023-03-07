@@ -28,6 +28,7 @@
   padding: 24px 30px;
   min-height: 103px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .hero__item:nth-child(even) {
@@ -42,4 +43,12 @@
   text-decoration: none;
   max-width: 130px;
   display: inline-block;
+}
+
+.hero__icon {
+  fill: $dark-cyan;
+  opacity: 0.5;
+  position: absolute;
+  top: 23px;
+  right: 32px;
 }
