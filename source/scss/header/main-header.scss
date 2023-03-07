@@ -57,8 +57,10 @@
   @media (max-width: $mobile-width) {
     position: absolute;
     left: 0;
-    top: 78px;
+    top: 80px;
     width: 100%;
+    background-color: $white;
+    z-index: 1;
   }
 
   @media (min-width: $tablet-width) {
