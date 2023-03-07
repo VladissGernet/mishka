@@ -23,13 +23,22 @@
 }
 
 .hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 416px;
+
   @media (max-width: $mobile-width) {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 588px;
   }
 }
 
 .hero__title {
-  margin: 0 auto 120px;
+  margin: 0 auto 20px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -39,7 +48,7 @@
     font-size: 43px;
     line-height: 50px;
     max-width: 660px;
-    margin-bottom: 371px;
+    margin-bottom: 50px;
   }
 }
 
