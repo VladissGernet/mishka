@@ -1,0 +1,45 @@
+.hero {
+  background-color: $snow;
+  padding-top: 73px;
+}
+
+.hero__container {
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
+.hero__title {
+  margin: 0 auto 120px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  max-width: 260px;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__item {
+  background-color: $downy;
+  padding: 24px 30px;
+  min-height: 103px;
+  box-sizing: border-box;
+}
+
+.hero__item:nth-child(even) {
+  background-color: $puerto-rico;
+}
+
+.hero__link {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+  text-decoration: none;
+  max-width: 130px;
+  display: inline-block;
+}
