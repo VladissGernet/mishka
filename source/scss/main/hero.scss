@@ -1,6 +1,9 @@
 .hero {
-  background-color: $snow;
   padding-top: 73px;
+  background-color: $snow;
+  background-image: url("../img/hero/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -17px;
 }
 
 .hero__container {
