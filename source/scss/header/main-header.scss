@@ -150,6 +150,7 @@
 .main-header__list--user {
   @media (min-width: $desktop-width) {
     max-width: 350px;
+    align-items: start;
   }
 }
 
@@ -167,7 +168,20 @@
 }
 
 .main-header__list--secondary {
-  gap: 10px 36px;
+  @media (min-width: $tablet-width) {
+    gap: 10px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__list--tertiary {
+  @media (min-width: $desktop-width) {
+    gap: 10px 63px;
+    max-width: 460px;
+  }
 }
 
 .main-header__navigation--closed .main-header__list {
@@ -265,6 +279,13 @@
 .main-header__link--secondary {
   padding: 0;
   font-size: 15px;
+}
+
+.main-header__link--tertiary {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    font-size: 15px;
+  }
 }
 
 .main-header__text {
