@@ -181,9 +181,9 @@
 
 .main-header__list--tertiary {
   display: none;
-  
+
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
     gap: 10px 63px;
     max-width: 460px;
   }

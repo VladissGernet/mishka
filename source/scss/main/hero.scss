@@ -23,22 +23,13 @@
 }
 
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 416px;
-
   @media (max-width: $mobile-width) {
     margin: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 588px;
   }
 }
 
 .hero__title {
-  margin: 0 auto 20px;
+  margin: 0 auto 120px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -48,7 +39,13 @@
     font-size: 43px;
     line-height: 50px;
     max-width: 660px;
-    margin-bottom: 50px;
+    margin-bottom: 371px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 357px;
   }
 }
 
@@ -71,8 +68,17 @@
       background-image: url("../img/hero/wavy-line.svg");
       background-repeat: repeat-x;
       background-position: bottom left -11px;
-      padding-bottom: 13px;
       z-index: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-auto-flow: row dense;
+
+    &::before {
+      background-size: 1250px 34px;
+      background-position: bottom left -36px;
+      padding-bottom: 19px;
     }
   }
 }
@@ -81,6 +87,14 @@
   background-color: $downy;
   padding: 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .hero__item:nth-child(even) {
