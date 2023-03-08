@@ -12,13 +12,36 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     padding-top: 91px;
     background-image: url("../img/hero/hero-desktop.jpg");
     background-position: center -65px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/hero/wavy-line.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+      z-index: 1;
+      bottom: 0;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero/hero-desktop@2x.jpg");
       background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-size: 1250px 34px;
+      background-position: bottom;
+      padding-bottom: 19px;
+      height: 34px;
     }
   }
 }
@@ -59,30 +82,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 24px;
-      background-image: url("../img/hero/wavy-line.svg");
-      background-repeat: repeat-x;
-      background-position: bottom left -11px;
-      z-index: 1;
-      bottom: 0;
-    }
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
     grid-auto-flow: row dense;
-
-    &::before {
-      background-size: 1250px 34px;
-      background-position: bottom left -36px;
-      padding-bottom: 19px;
-      height: 34px;
-    }
+    padding-bottom: 17px;
   }
 }
 
@@ -91,14 +96,6 @@
   padding: 0;
   position: relative;
   transition: 0.3s;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 14px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
 }
 
 .hero__item:nth-child(even) {
@@ -115,7 +112,7 @@
   transition: 0.3s;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 36px 50px;
+    padding: 26px 36px 33px;
   }
 }
 
