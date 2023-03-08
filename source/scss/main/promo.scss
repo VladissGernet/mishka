@@ -1,18 +1,26 @@
+.promo {
+  background-image: url("../img/promo/promo-wavy-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
 .promo__wrapper {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 17px;
 }
 
 .promo__product-name {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 0 4px;
 }
 
 .promo__title {
-  font-size: 25px;
-  line-height: 30px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
   color: $downy;
   text-transform: uppercase;
   margin: 0;
@@ -22,27 +30,46 @@
   font-size: 15px;
   line-height: 24px;
   color: $charcoal;
+  margin: 0 0 28px;
 }
 
 .promo__list {
-  margin: 0;
+  margin: 0 0 28px;
   color: $charcoal;
   font-size: 15px;
   line-height: 20px;
+  display: grid;
+  grid-template-columns: minmax(98px, 1fr) 2fr;
+  gap: 7px 0;
 }
 
-.promo__description {
+.promo__term {
+  box-shadow: inset 0 -1px $gallery;
+  padding-bottom: 13px;
+  padding-right: 5px;
+}
+
+.promo__list-description {
   margin: 0;
+  box-shadow: inset 0 -1px $gallery;
+  padding-bottom: 13px;
+}
+
+.promo__image {
+  margin: 0 auto 26px;
+  display: block;
 }
 
 .promo__price {
-  margin: 0;
+  margin: 0 0 24px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 17px;
+  line-height: 24px;
   color: $charcoal;
+  text-align: center;
 }
 
 .promo__button {
   width: 100%;
+  margin-bottom: 42px;
 }
