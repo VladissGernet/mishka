@@ -89,6 +89,7 @@
   background-color: $downy;
   padding: 0;
   position: relative;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 14px;
@@ -110,6 +111,7 @@
   min-height: 103px;
   box-sizing: border-box;
   padding: 24px 30px;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     padding: 26px 36px 50px;
@@ -140,4 +142,12 @@
     top: 30px;
     right: 35px;
   }
+}
+
+.hero__item:hover {
+  transform: scaleY(1.037);
+}
+
+.hero__item:hover .hero__link {
+  transform: scaleY(0.963) translateY(-5px);
 }
