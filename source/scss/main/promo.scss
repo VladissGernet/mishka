@@ -1,0 +1,48 @@
+.promo__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.promo__product-name {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.promo__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $downy;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.promo__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $charcoal;
+}
+
+.promo__list {
+  margin: 0;
+  color: $charcoal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.promo__description {
+  margin: 0;
+}
+
+.promo__price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $charcoal;
+}
+
+.promo__button {
+  width: 100%;
+}
