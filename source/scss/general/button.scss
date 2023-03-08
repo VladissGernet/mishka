@@ -9,4 +9,15 @@
   border: 2px solid $charcoal;
   box-sizing: border-box;
   padding: 14px;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background-color: $charcoal;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $charcoal;
+  }
 }
