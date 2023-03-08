@@ -2,6 +2,11 @@
   background-image: url("../img/promo/promo-wavy-line-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/promo/promo-wavy-line-tablet.svg");
+    padding-bottom: 27px;
+  }
 }
 
 .promo__container {
