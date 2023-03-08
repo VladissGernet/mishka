@@ -137,6 +137,7 @@
   position: absolute;
   top: 23px;
   right: 32px;
+  transition: opacity 0.1s;
 
   @media (min-width: $tablet-width) {
     top: 30px;
@@ -151,3 +152,18 @@
 .hero__item:hover .hero__link {
   transform: scaleY(0.963) translateY(-5px);
 }
+
+.hero__item:active {
+  transform: scaleY(1);
+  transition: 0.1s;
+}
+
+.hero__item:active .hero__link {
+  transform: scaleY(1) translateY(0);
+  transition: 0.1s;
+}
+
+.hero__link:active .hero__icon {
+  opacity: 0.3;
+}
+
