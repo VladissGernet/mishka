@@ -1,7 +1,7 @@
 .review {
   padding-top: 57px;
   padding-bottom: 50px;
-  background-image: url("../img/promo/promo-wavy-line-mobile.svg");
+  background-image: url("../img/general/wavy-line-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 }
@@ -38,6 +38,7 @@
   margin-bottom: 38px;
   display: flex;
   border: 1px solid $gallery;
+  width: fit-content;
 }
 
 .review__control {
@@ -59,6 +60,14 @@
 
 .review__control:first-child {
   box-shadow: inset -1px 0 $gallery;
+}
+
+.review__control:hover .review__icon {
+  opacity: 0.6;
+}
+
+.review__control:active .review__icon {
+  opacity: 0.3;
 }
 
 .review__button {
