@@ -1,11 +1,21 @@
 .about {
   padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+  }
 }
 
 .about__title {
   margin: 0 0 28px;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .about__list {
@@ -15,6 +25,12 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
 }
 
 .about__item {
@@ -26,12 +42,13 @@
   justify-content: space-between;
   gap: 17px;
   min-height: 95px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about__icon {
   margin-left: 2px;
-}
-
-.about__text {
-  margin: 0;
 }
