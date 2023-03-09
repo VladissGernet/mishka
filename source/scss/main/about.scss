@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+  }
 }
 
 .about__title {
@@ -15,6 +19,13 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 38px;
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 700px;
   }
 }
 
@@ -28,8 +39,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
+    grid-template-areas:
+    "flower threads"
+    "style rocket"
+    "heart gift";
+    gap: 53px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 700px;
   }
 }
 
@@ -46,7 +65,32 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    min-height: 102px;
   }
+}
+
+.about__item--flower {
+  grid-area: flower;
+}
+
+.about__item--style {
+  grid-area: style;
+}
+
+.about__item--heart {
+  grid-area: heart;
+}
+
+.about__item--threads {
+  grid-area: threads;
+}
+
+.about__item--rocket {
+  grid-area: rocket;
+}
+
+.about__item--toy {
+  grid-area: toy;
 }
 
 .about__icon {
