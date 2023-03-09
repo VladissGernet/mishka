@@ -1,10 +1,19 @@
+.review {
+  padding-top: 57px;
+  padding-bottom: 50px;
+  background-image: url("../img/promo/promo-wavy-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
 .review__title {
   font-size: 25px;
   line-height: 30px;
+  margin: 0 0 14px;
 }
 
 .review__blockquote {
-  margin: 0;
+  margin: 0 0 27px;
   font-size: 15px;
   line-height: 30px;
   color: $charcoal;
@@ -15,6 +24,8 @@
   font-style: normal;
   font-size: 17px;
   color: $black;
+  margin-top: 31px;
+  display: block;
 }
 
 .review__link {
@@ -23,7 +34,33 @@
   color: $charcoal;
 }
 
+.review__control-container {
+  margin-bottom: 38px;
+  display: flex;
+  border: 1px solid $gallery;
+}
+
 .review__control {
-  width: 200px;
-  height: 100px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 130px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.review__icon {
+  transform: translate(-3px, 2px);
+}
+
+.review__control:last-child .review__icon {
+  transform: translate(-2px, 2px) rotate(180deg);
+}
+
+.review__control:first-child {
+  box-shadow: inset -1px 0 $gallery;
+}
+
+.review__button {
+  width: 100%;
 }
