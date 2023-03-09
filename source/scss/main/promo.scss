@@ -1,10 +1,12 @@
 .promo {
+  padding-top: 31px;
   background-image: url("../img/promo/promo-wavy-line-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo/promo-wavy-line-tablet.svg");
+    padding-top: 40px;
     padding-bottom: 27px;
   }
 

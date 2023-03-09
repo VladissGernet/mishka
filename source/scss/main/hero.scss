@@ -1,5 +1,4 @@
 .hero {
-  margin-bottom: 31px;
   padding-top: 73px;
   background-color: $snow;
   background-image: url("../img/hero/hero-mobile.jpg");
@@ -12,7 +11,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
     padding-top: 91px;
     background-image: url("../img/hero/hero-desktop.jpg");
     background-position: center -65px;
