@@ -30,6 +30,30 @@
 .location__link {
   text-decoration: none;
   color: $charcoal;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $downy2;
+    bottom: -3px;
+  }
+
+  &:hover {
+    color: $downy;
+  }
+
+  &:active {
+    &::before {
+    opacity: 0.1;
+  }
+  }
+}
+
+.location__map {
+  margin-bottom: 37px;
 }
 
 .location__map--nojs {
