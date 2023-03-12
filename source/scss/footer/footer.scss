@@ -2,6 +2,11 @@
   padding-top: 27px;
   padding-bottom: 22px;
   background-color: $white-smoke;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
 }
 
 .footer__link-container {
@@ -21,6 +26,19 @@
   @media (max-width: $mobile-width) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+
+    &:hover {
+      color: $puerto-rico2;
+    }
+
+    &:active {
+      color: $puerto-rico2;
+      opacity: 0.3;
+    }
+  }
 }
 
 .footer__list {
@@ -30,9 +48,10 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-    margin-top: 7px;
-    margin-right: -27px;
-    max-width: 140px;
+    margin-top: 5px;
+    max-width: 200px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
