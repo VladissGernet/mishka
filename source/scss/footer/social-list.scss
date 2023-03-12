@@ -5,18 +5,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 24px;
+  gap: 10px 29px;
 }
 
 .social-list__link {
-  color: #666666;
+  color: $aubergine;
 
   :hover {
-    color: $green;
+    color: $puerto-rico2;
   }
 
   :active {
-    color: $green;
+    color: $puerto-rico2;
     opacity: 0.3;
   }
 }
