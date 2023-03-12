@@ -1,11 +1,14 @@
 .modal-radio {
   margin: 0;
-  padding: 0 0 30px;
+  padding: 0 0 31px;
   border: none;
 }
 
 .modal-radio__title {
-  margin: 0 auto 30px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $charcoal;
+  margin: 0 auto 22px;
   padding: 0;
 }
 
@@ -28,4 +31,10 @@
   display: block;
   text-align: center;
   border: 2px solid rgba($charcoal, 0.1);
+  padding: 17px 10px;
+  box-sizing: border-box;
+}
+
+.modal-radio__input:checked + .modal-radio__label {
+  border-color: $downy;
 }
