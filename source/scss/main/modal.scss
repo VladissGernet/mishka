@@ -20,6 +20,11 @@
   align-items: center;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 568px;
+    padding-top: 37px;
+  }
 }
 
 .modal__large-text {
@@ -29,6 +34,12 @@
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 13px;
+  }
 }
 
 .modal__button {
