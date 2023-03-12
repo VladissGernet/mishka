@@ -203,11 +203,13 @@
 }
 
 .main-header__navigation--nojs {
-  position: static;
-  width: calc(100% + 60px);
-  margin-left: -30px;
-  margin-top: 17px;
-  box-shadow: inset 0 1px $whisper;
+  @media (max-width: $mobile-width) {
+    position: static;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-top: 17px;
+    box-shadow: inset 0 1px $whisper;
+  }
 }
 
 .main-header__navigation--nojs .main-header__list {

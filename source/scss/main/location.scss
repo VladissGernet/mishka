@@ -76,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 81px;
   }
 }
 
@@ -134,26 +134,27 @@
 }
 
 .location__map {
-  margin-bottom: 37px;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 527px;
-    height: 457px;
-    grid-row: span 2;
-  }
 }
 
 .location__map--nojs {
   display: none;
 }
 
+.location__map-wrapper {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-row: span 2;
+  }
+}
+
 .location__map-img {
-  margin-bottom: 39px;
   width: 100%;
   object-fit: cover;
 }
