@@ -9,6 +9,10 @@
   z-index: 2;
 }
 
+.modal--closed {
+  display: none;
+}
+
 .modal__window {
   position: relative;
   margin: 116px auto auto;
