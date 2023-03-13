@@ -343,6 +343,12 @@
   }
 }
 
+.main-header__secondary {
+  @media (min-width: $tablet-width) {
+    background-color: $white-smoke;
+  }
+}
+
 .main-header__secondary-container {
   display: grid;
   grid-template-columns: 1fr 300px;
