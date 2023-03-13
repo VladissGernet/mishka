@@ -1,5 +1,10 @@
 .order-form {
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 57px;
+  }
 }
 
 .order-form__slogan {
@@ -7,12 +12,16 @@
   color: $charcoal;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 63px;
+  }
 }
 
 .order-form__radio {
-  @media (max-width: $mobile-width) {
-    position: relative;
-  }
+  position: relative;
 }
 
 .order-form__title {
@@ -24,9 +33,9 @@
   text-transform: uppercase;
   max-width: 150px;
   padding: 0 23px 0 0;
-  margin-bottom: 30px;
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
     &::before {
       position: absolute;
       content: "";
@@ -36,5 +45,11 @@
       z-index: -1;
       top: 7px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    top: 18px;
   }
 }
