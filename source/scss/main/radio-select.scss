@@ -17,6 +17,10 @@
     margin: 0 auto;
     width: 332px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .radio-select__label {
